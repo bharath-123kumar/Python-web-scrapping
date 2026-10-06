@@ -1,0 +1,26 @@
+[2026-10-06 21:17:37] [INFO] [pipeline]: ============================================================
+[2026-10-06 21:17:37] [INFO] [pipeline]: STARTING MULTI-SOURCE WEB SCRAPING & CONSOLIDATION PIPELINE
+[2026-10-06 21:17:37] [INFO] [pipeline]: ============================================================
+[2026-10-06 21:17:37] [INFO] [pipeline]: --- Stage 1A: Scraping Books to Scrape ---
+[2026-10-06 21:17:37] [INFO] [scrapers.books_scraper]: Starting BooksScraper traversal at https://books.toscrape.com/
+[2026-10-06 21:17:37] [INFO] [scrapers.books_scraper]: Scraping Books page 1: https://books.toscrape.com/
+[2026-10-06 21:17:51] [INFO] [scrapers.books_scraper]: Scraping Books page 2: https://books.toscrape.com/catalogue/page-2.html
+[2026-10-06 21:17:52] [INFO] [scrapers.books_scraper]: Reached configured max_pages limit (2). Halting Books scraper.
+[2026-10-06 21:17:52] [INFO] [scrapers.books_scraper]: BooksScraper finished: 40 records collected across 2 pages attempted.
+[2026-10-06 21:17:52] [INFO] [pipeline]: --- Stage 1B: Scraping Quotes to Scrape ---
+[2026-10-06 21:17:52] [INFO] [scrapers.quotes_scraper]: Starting QuotesScraper traversal at https://quotes.toscrape.com/
+[2026-10-06 21:17:52] [INFO] [scrapers.quotes_scraper]: Scraping Quotes page 1: https://quotes.toscrape.com/
+[2026-10-06 21:17:56] [INFO] [scrapers.quotes_scraper]: Scraping Quotes page 2: https://quotes.toscrape.com/page/2/
+[2026-10-06 21:17:56] [INFO] [scrapers.quotes_scraper]: Reached configured max_pages limit (2). Halting Quotes scraper.
+[2026-10-06 21:17:56] [INFO] [scrapers.quotes_scraper]: QuotesScraper finished: 20 records collected across 2 pages attempted.
+[2026-10-06 21:17:56] [INFO] [pipeline]: --- Stage 2: Data Cleaning & Normalization ---
+[2026-10-06 21:17:56] [INFO] [pipeline]: --- Stage 3: Integrity Validation ---
+[2026-10-06 21:17:56] [INFO] [pipeline]: Books validation: 40 valid, 0 rejected
+[2026-10-06 21:17:56] [INFO] [pipeline]: Quotes validation: 20 valid, 0 rejected
+[2026-10-06 21:17:56] [INFO] [pipeline]: --- Stage 4: Deduplication ---
+[2026-10-06 21:17:56] [INFO] [pipeline]: Books deduplication: 40 unique, 0 duplicates removed
+[2026-10-06 21:17:56] [INFO] [pipeline]: Quotes deduplication: 20 unique, 0 duplicates removed
+[2026-10-06 21:17:56] [INFO] [pipeline]: --- Stage 5: Consolidation & Output Generation ---
+[2026-10-06 21:17:57] [INFO] [pipeline]: Saved final dataset to C:\Antigravity\Python web scraping\scraping_assignment\output\final_dataset.csv (60 rows)
+[2026-10-06 21:17:57] [INFO] [pipeline]: Saved summary report to C:\Antigravity\Python web scraping\scraping_assignment\output\summary_report.json
+[2026-10-06 21:17:57] [INFO] [pipeline]: Pipeline execution completed successfully.

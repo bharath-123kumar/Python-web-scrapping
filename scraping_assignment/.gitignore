@@ -1,0 +1,36 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE configurations
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output files explicitly tracked as submission artifacts:
+# !output/final_dataset.csv
+# !output/summary_report.json

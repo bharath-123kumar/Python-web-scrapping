@@ -1,0 +1,25 @@
+{
+  "execution_time_seconds": 19.51,
+  "sources": {
+    "Books to Scrape": {
+      "pages_attempted": 2,
+      "records_collected": 40,
+      "records_after_cleaning": 40,
+      "records_rejected": 0,
+      "duplicates_detected": 0
+    },
+    "Quotes to Scrape": {
+      "pages_attempted": 2,
+      "records_collected": 20,
+      "records_after_cleaning": 20,
+      "records_rejected": 0,
+      "duplicates_detected": 0
+    }
+  },
+  "total_records_collected": 60,
+  "total_records_after_cleaning": 60,
+  "total_records_rejected": 0,
+  "total_duplicates": 0,
+  "final_record_count": 60,
+  "failed_pages": []
+}
